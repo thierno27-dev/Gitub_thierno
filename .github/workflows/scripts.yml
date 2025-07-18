@@ -1,0 +1,22 @@
+name: Run Bash Scripts
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-bash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run script1.sh
+        run: bash script1.sh
+
+      - name: Run script2.sh
+        run: echo 25 | bash script2.sh
+
+      - name: Run script3.sh
+        run: echo 21 | bash script3.sh
