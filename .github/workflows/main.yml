@@ -25,3 +25,7 @@ jobs:
           name: plan-json
           path: plan.json
           retention-days: 7
+
+          name: plan-json
+          path: plan.json
+          retention-days: 7
